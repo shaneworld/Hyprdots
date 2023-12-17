@@ -5,7 +5,7 @@
     "layer": "top",
     "position": "bottom",
     "mod": "dock",
-    "height": 31,
+    "height": 29,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -13,9 +13,9 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/l_end","custom/launcher","custom/r_end","custom/l_end", "cpu", "memory", "temperature", "custom/r_end", "custom/l_end", "hyprland/window", "custom/r_end","custom/l_end", "custom/spotify" ,"custom/r_end"],
+	"modules-left": ["custom/l_end","custom/launcher","custom/r_end","custom/l_end", "cpu", "memory", "temperature", "custom/r_end", "custom/l_end", "hyprland/window", "custom/r_end"],
 	"modules-center": ["custom/l_end","hyprland/workspaces","custom/r_end"],
-	"modules-right": ["custom/l_end","tray","custom/r_end","custom/l_end","battery","backlight","pulseaudio","custom/r_end","custom/l_end","idle_inhibitor","clock","custom/r_end"],
+	"modules-right": ["custom/l_end","tray","custom/r_end","custom/l_end","battery","backlight","pulseaudio","clock","custom/r_end", "custom/l_end", "custom/power", "custom/r_end"],
 
 //"custom/l_end","network","custom/r_end",//
 // sourced from modules based on config.ctl //
@@ -27,10 +27,19 @@
     "custom/spotify": {
         "exec": "/usr/bin/python3 $HOME/.config/waybar/modules/mediaplayer.py --player spotify",
         "format": "{} ",
+        "max-length": 30,
         "return-type": "json",
         "on-click": "playerctl play-pause --player spotify",
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous"
+    },
+
+    "custom/power": {
+        "format": "{}",
+        "exec": "echo ; echo  logout",
+        "on-click": "wlogout",
+        "interval" : 86400, // once every day
+        "tooltip": true
     },
 
     "idle_inhibitor": {
@@ -42,8 +51,8 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%H:%M}",
+        "format": "󰥔 {:%H:%M}",
+        "format-alt": " {:%I:%M%p}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
