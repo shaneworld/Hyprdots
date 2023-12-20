@@ -1,7 +1,11 @@
 autostart
 clash
 clash_win
+configstore
+dolphinrc
 dconf
+Electron
+Estmob
 completions
 conf.d 
 fish_plugins
@@ -10,10 +14,14 @@ functions
 themes
 fcitx
 fcitx5
+gtk-3.0
 spotify
 ibus
+kde.org
+libreoffice
 nvim
 pulse
 systemd
+session
 yay
 kitty.conf.bak
