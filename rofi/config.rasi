@@ -8,7 +8,7 @@ configuration {
     display-window:              "";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
-    font:                        "JetBrainsMono Nerd Font 10";
+    font:                        "JetBrainsMono NF 11";
     icon-theme:                  "Papirus-Dark";
 }
 
@@ -25,7 +25,7 @@ window {
     cursor:                      "default";
     spacing:                     0px;
     padding:                     0px;
-    border:                      2px;
+    border:                      0px;
     border-radius:               40px;
     border-color:                @main-br;
     background-color:            transparent;
