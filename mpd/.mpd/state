@@ -1,8 +1,8 @@
-sw_volume: 98
+sw_volume: 100
 audio_device_state:1:My Pulse Output
-state: pause
+state: play
 current: 2
-time: 45.942000
+time: 120.058000
 random: 0
 repeat: 0
 single: 0
@@ -14,4 +14,32 @@ playlist_begin
 0:陶喆 - 天天.flac
 1:陶喆 - 飞机场的10_30.flac
 2:周杰伦 - 心雨.flac
+3:周杰伦 - 可爱女人.flac
+4:周杰伦 - 龙卷风.flac
+5:陶喆 - 普通朋友.flac
+6:方大同 - 红豆.flac
+7:周杰伦 - 借口.flac
+8:周杰伦 - 搁浅.flac
+9:周杰伦 - 止战之殇.flac
+10:周杰伦 - 园游会.flac
+11:周杰伦 - 不能说的秘密.flac
+12:于文文 - 体面.flac
+13:周杰伦 - 分裂.flac
+14:周杰伦 - 浪漫手机.flac
+15:周杰伦 - 东风破.flac
+16:周杰伦 - 你听得到.flac
+17:陶喆 - 就是爱你.flac
+18:陶喆 - 爱我还是他.flac
+19:丁世光 - 情话 Love Words.flac
+20:周杰伦 - 断了的弦.flac
+21:周杰伦 - 我不配.flac
+22:周杰伦 - 上海一九四三.flac
+23:周杰伦 - 对不起.flac
+24:周杰伦 - 开不了口.flac
+25:周杰伦 - 爱在西元前.flac
+26:周杰伦 - 世界末日 (Live).flac
+27:周杰伦 - 你比从前快乐 (Live).flac
+28:周杰伦 - 退后.flac
+29:陶喆 - Melody.flac
+30:周杰伦 - 晴天.flac
 playlist_end

@@ -2,7 +2,10 @@ autostart
 Thunar
 pavucontrol.ini
 xfce4
+QtProject.conf
 error.log
+obs-studio
+.mpd
 current-theme.conf
 clash
 clash_win

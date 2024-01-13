@@ -1,3 +1,5 @@
+![桌面展示](screenshot.png)
+
 # 系统组件
 - network-manager-applet
 - bluez	
@@ -25,6 +27,9 @@
 - ttf-font-awesome
 - noto-fonts-cjk
 
+# 壁纸
+- swww
+
 # 输入法
 - fcitx5-im
 - fcitx5-chinese-addons
@@ -49,7 +54,8 @@
     - [markdown preview](https://github.com/iamcco/markdown-preview.nvim)
 
 # 音乐
-- spotify
+- ncmpcpp
+- mpd
 
 # 启动器
 - rofi-lbonn-wayland-git
@@ -68,10 +74,3 @@
 - shell-color-scripts
 - exa
 - tmux
-
-# 开发环境（待完善）
-- nodejs
-- npm
-- python-pip
-- rust-analyzer
-- clang
