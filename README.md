@@ -15,7 +15,7 @@
 - qt5-graphicaleffects
 - [sddm-chili](https://github.com/MarianArlt/sddm-chili)
 
-# 功耗控制
+# [功耗控制](https://arch.icekylin.online/guide/advanced/power-ctl.html)
 - tlp 
 - tlp-rdw
 
@@ -26,13 +26,16 @@
 - ttf-jetbrains-mono-nerd
 - ttf-font-awesome
 - noto-fonts-cjk
+- noto-fonts-emoji
 
 # 壁纸
 - swww
+- [wallpaper switcher](https://github.com/JaKooLit/wallpaper-switcher)
 
 # 输入法
 - fcitx5-im
-- fcitx5-chinese-addons
+- fcitx5-rime
+- [雾凇拼音](https://github.com/iDvel/rime-ice)
 - fcitx5-material-color
 
 # pdf 阅读器
@@ -47,11 +50,17 @@
 # 浏览器
 - firefox
 
+# 文件浏览器
+- Thunar
+- [Yazi](https://github.com/sxyazi/yazi)
+
 # 编辑器
 - neovim
     - [NvChad](https://nvchad.com/docs/quickstart/install)
     - [lastplace](https://github.com/ethanholz/nvim-lastplace)
     - [markdown preview](https://github.com/iamcco/markdown-preview.nvim)
+    - [vimtex](https://github.com/lervag/vimtex)
+    - [img-paste](https://github.com/img-paste-devs/img-paste.vim)
 
 # 音乐
 - ncmpcpp
@@ -71,6 +80,6 @@
     - [tide prompt](https://github.com/IlanCosman/tide)
     - [Done](https://github.com/franciscolourenco/done)
     - [autopair](https://github.com/jorgebucaran/autopair.fish)
-- shell-color-scripts
+- [shell-color-scripts](https://gitlab.com/dwt1/shell-color-scripts)
 - exa
 - tmux
