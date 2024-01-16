@@ -1,4 +1,4 @@
-# Screen Shots
+# Screenshots
 
 ![1](ScreenShot1.png)
 ![5](ScreenShot2.png)
