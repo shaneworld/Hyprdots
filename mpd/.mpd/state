@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:My Pulse Output
 state: pause
-current: 7
-time: 46.718000
+current: 31
+time: 130.118000
 random: 0
 repeat: 0
 single: 0
@@ -42,4 +42,19 @@ playlist_begin
 28:周杰伦 - 退后.flac
 29:陶喆 - Melody.flac
 30:周杰伦 - 晴天.flac
+31:棱镜 - 总有一天你会出现在我身边.flac
+32:周杰伦 - 外婆.flac
+33:陶喆 - 寂寞的季节.flac
+34:周杰伦 - 白色风车.flac
+35:周杰伦,潘儿 - 夜的第七章.flac
+36:周杰伦 - 瓦解 (Live).flac
+37:周杰伦 - 倒带 (Live).flac
+38:周杰伦 - 爱情悬崖.flac
+39:郭顶 - 我们俩.flac
+40:周杰伦 - 爷爷泡的茶.flac
+41:周杰伦 - 梦想启动.flac
+42:周杰伦 - 甜甜的.flac
+43:周杰伦 - 蒲公英的约定.flac
+44:丁世光 - 一口.flac
+45:周杰伦 - 你好吗.flac
 playlist_end

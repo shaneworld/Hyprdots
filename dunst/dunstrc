@@ -163,8 +163,8 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    # format = "󰟪 %a\n<b>󰋑 %s</b>\n%b"
-    format = "<b>%a</b>\n%b"
+    format = "󰟪 %a\n<b>󰋑 %s</b>\n%b"
+    # format = "<b>%a</b>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -454,7 +454,7 @@
 [urgency_low]
     background = "#f5e0dc"
     foreground = "#1e1e2e"
-    frame_color = "#262C48"
+    frame_color = "#f5e0dc"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
 
