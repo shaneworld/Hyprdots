@@ -35,6 +35,10 @@
 - swww
 - [wallpaper switcher](https://github.com/JaKooLit/wallpaper-switcher)
 
+# 任务管理
+
+- [planify](https://github.com/alainm23/planify)
+
 # 输入法
 - fcitx5-im
 - fcitx5-rime
@@ -51,6 +55,7 @@
 - grim
 
 # 浏览器
+- vivaldi
 - firefox
 
 # 文件浏览器
