@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:My Pulse Output
 state: pause
-current: 31
-time: 130.118000
+current: 39
+time: 59.880000
 random: 0
 repeat: 0
 single: 0
@@ -57,4 +57,5 @@ playlist_begin
 43:周杰伦 - 蒲公英的约定.flac
 44:丁世光 - 一口.flac
 45:周杰伦 - 你好吗.flac
+46:周杰伦 - 娘子.flac
 playlist_end

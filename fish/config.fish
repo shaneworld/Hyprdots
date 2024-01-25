@@ -7,7 +7,7 @@ if status is-interactive
   alias pc "sudo pacman -Sc"
   set PATH /home/shane/Development/rustlings/target/release $PATH
   set PATH /home/shane/.cargo/bin/ $PATH
-  # set -x https_proxy http://127.0.0.1:7890
-  # set -x http_proxy http://127.0.0.1:7890
-  # set -x all_proxy socks5://127.0.0.1:7890
+  set -x https_proxy http://localhost:20171
+  set -x http_proxy http://localhost:20171
+  set -x all_proxy http://localhost:20171
 end

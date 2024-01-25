@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=$HOME/.config/swww/wallpapers/
+DIR=$HOME/.config/swww/wallpapers-2/
 PICS=($(ls ${DIR}))
 
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
