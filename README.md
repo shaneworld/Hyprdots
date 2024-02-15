@@ -1,7 +1,7 @@
 ## Screenshots
 
-![img1](https://gitee.com/shanegitee/pic/raw/master/hyprdots1.png)
-![img2](https://gitee.com/shanegitee/pic/raw/master/hyprdots2.png)
+![](https://gitee.com/shanegitee/pic/raw/master/hyprdots1.png)
+![](https://gitee.com/shanegitee/pic/raw/master/hyprdots2.png)
 
 ## 包
 
