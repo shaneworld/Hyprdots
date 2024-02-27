@@ -13,40 +13,6 @@ return {
     build = function() vim.fn["mkdp#util#install"]() end,
   },
 
-  -- neovim orgmode
-  {
-    'nvim-orgmode/orgmode',
-    ft = 'org',
-    dependencies = {
-      { 'nvim-treesitter/nvim-treesitter', lazy = true },
-    },
-    event = 'VeryLazy',
-    config = function()
-      require("plugins.config.orgmode")
-    end,
-  },
-
-  {
-      "lukas-reineke/headlines.nvim",
-      ft = 'org',
-      dependencies = "nvim-treesitter/nvim-treesitter",
-      config = function()
-        require("plugins.config.headlines")
-      end,
-  },
-
-  {
-    "michaelb/sniprun",
-    ft = 'org',
-    branch = "master",
-    build = "sh install.sh 1",
-    -- do 'sh install.sh 1' if you want to force compile locally
-    -- (instead of fetching a binary from the github release). Requires Rust >= 1.65
-    config = function()
-      require("plugins.config.sniprun")
-    end,
-  },
-
   {
     "lervag/vimtex",
     ft = 'tex',

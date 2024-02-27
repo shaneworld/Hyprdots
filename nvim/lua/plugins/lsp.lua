@@ -17,7 +17,16 @@ return {
     config = function()
       local servers = {
         marksman = {},
-        pyright = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                autoImportCompletions = true,
+                autoSearchPaths = true,
+              },
+            },
+          },
+        },
         rust_analyzer = {},
         bashls = {},
         clangd = {},
