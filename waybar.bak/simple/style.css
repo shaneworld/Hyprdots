@@ -1,0 +1,127 @@
+* {
+    font-family:"JetbrainsMono Nerd Font";
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+ #waybar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#custom-bluebyt,
+#workspaces,
+#mode,
+#cpu,
+#custom-disk,
+#memory,
+#temperature,
+#custom-wlogout,
+#mpd,
+#clock,
+#custom-pacmanAlt,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#network,
+#taskbar,
+#custom-cava-internal,
+#custom-uptime,
+#window,
+#backlight,
+#battery,
+#tray {
+  padding: 0 5px;
+  margin: 2px 2px 2px 2px;
+} 
+
+#custom-bluebyt {
+  padding: 0 0px;
+  min-width: 20px;
+  color: #8FBCBB;
+  font-size: 18px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  min-width: 20px;
+	background: transparent;
+	transition: none;
+  color: #5e81ac;
+}
+
+#workspaces button.active {
+  color: #EBCB8B;
+	background: transparent;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #FAE3B0;
+}
+
+#workspaces button.active:hover {
+    color: #E8A2AF;
+}
+
+#cpu {
+  color: #D08770;
+}
+
+#custom-disk{
+  color: #81A1C1;
+}
+
+#backlight{
+  color: #F8BD96;
+}
+
+#battery{
+  color: #B5E8E0;
+}
+
+#memory {
+  color: #B48EAD;
+}
+
+#temperature {
+  color: #BF616A;
+}
+
+#clock {
+  color: #EBCB8B;
+}
+
+#pulseaudio {
+  color: #EBCB8B;
+}
+
+#pulseaudio.muted {
+  color: #EBCB8B;
+}
+
+#custom-wlogout {
+  color: #BF616A;
+}
+
+#network {
+    color: #B48EAD;
+}
+
+#network.disconnected {
+    background-color: #B48EAD;
+    color: #1e222a;
+}
+
+#custom-uptime {
+    color: #EBCB8B;
+}
+
+#custom-cava-internal{
+    font-family: "Hack Nerd Font" ;
+    color: #B48EAD;
+    border-radius: 8px;
+}

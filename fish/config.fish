@@ -1,6 +1,6 @@
 if status is-interactive
   set -g fish_greeting
-  colorscript -e elfman
+  colorscript -e crunch
   alias vim "nvim"
   alias ls "exa --icons -l"
   alias ll "exa --icons -al"

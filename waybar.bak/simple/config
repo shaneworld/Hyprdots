@@ -1,0 +1,131 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "margin-bottom": -2,
+    "modules-left": ["custom/bluebyt","hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray","cpu", "memory", "custom/disk", "temperature","pulseaudio", "backlight", "battery", "custom/wlogout"],
+
+    "tray":{
+      "icon-size":16,
+      "spacing": 10
+    },
+
+    "custom/bluebyt": {
+        "format": "  ",
+        "tooltip": false,
+    },
+
+    "custom/wlogout": {
+        "format": "  {}",
+        "on-click": "systemctl suspend",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{: %I:%M %p  󰃭 %d/%m/%Y}"
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": " {}%",
+        "tooltip": false
+    },
+
+    "custom/disk": {
+        "format": " {}",
+        "interval": 60,
+        "format-alt": "{percentage}% ",
+        "format-alt-click": "click-right",
+        "return-type": "json",
+        "exec": "~/.config/waybar/storage.sh"
+    },
+
+    "temperature": {
+    //"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    //"hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
+  "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+  "input-filename": "temp1_input",  
+      "critical-threshold": 80,
+      "interval": 2,
+      "format": "{icon} {temperatureC}°C",
+      //"format": "{temperatureC}°C",
+      "format-icons": [
+          "", // Icon: temperature-empty
+          "", // Icon: temperature-quarter
+          "", // Icon: temperature-half
+          "", // Icon: temperature-three-quarters
+          ""  // Icon: temperature-full
+      ],
+      "tooltip": true
+    },
+
+    "network": {
+        "format-ethernet": " Net",
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "Disconnected ⚠ ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+      "tooltip": false,
+      "scroll-step": 5,
+      "format": "{icon} {volume}%",
+      "format-muted": "󰝟",
+      "on-click":"pavucontrol",
+      "format-icons": {
+        "default": ["", "", ""]
+      }
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "󰉁 {capacity}%",
+        "format-plugged": "󰉁 {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+
+    "backlight": {
+      "tooltip": false,
+      "format": " {}%",
+      "interval":1,
+    },
+
+    "hyprland/workspaces": {
+      "all-outputs": true,
+      "format": "{icon}",
+      "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": []
+      },
+      "format-icons": {
+        "active": "󰮯",
+        "empty": "",
+        "default": ""
+      }
+    },
+
+    "custom/uptime": {
+        "format": "{} ",       
+        "exec": "/home/bluebyt/.config/waybar/modules/session.sh",
+    },
+}
+

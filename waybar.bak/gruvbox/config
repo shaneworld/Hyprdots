@@ -1,0 +1,149 @@
+{
+    "layer": "top", // Waybar at top layer
+    // "output": ["DP-1"],
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "margin-bottom": -8,
+    "margin-top": 2,
+    "modules-left": ["custom/menu", "cpu", "memory", "clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [ "network", "custom/div", "backlight", "custom/div", "pulseaudio", "custom/div", "battery","tray", "custom/power"],
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "󰉁 {capacity}%",
+        "format-plugged": "󰉁 {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{: %I:%M %p  󰃭 %d/%m/%Y}"
+      },
+
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    "backlight": {
+      "tooltip": false,
+      "format": " {}%",
+      "interval":1,
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    "temperature": {
+        "thermal-zone": 1,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 hardwired",
+        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        "format-linked": "󱘖 {ifname} (No IP)",
+        "format-disconnected": " Disconnected",
+        "format-alt": "󰤨 {signalStrength}%",
+        "interval": 5
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1, // %, can be a float,
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "custom/menu": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "rofi -show drun",
+    },
+
+    "hyprland/workspaces": {
+
+      "all-outputs": true,
+      "format": "{icon}",
+      "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": []
+      },
+      "format-icons": {
+        "active": "󰮯",
+        "empty": "",
+        "default": ""
+      }
+    },
+
+    "custom/div": {
+        "format": "|",
+        "tooltip": false,
+
+    },
+
+    "custom/name": {
+        "format": "ダンテコンピュータ",
+        "tooltip":false,
+    },
+    "custom/power": {
+        "format": " ⏻ ",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 15,
+        //"icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+    
+
+    
+
+
+    
+}

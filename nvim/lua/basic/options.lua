@@ -34,6 +34,10 @@ vim.opt.timeoutlen = 200
 -- set leader key
 vim.g.mapleader = ' '
 
+vim.filetype.add({
+  pattern = { [".*/hyprland%.conf"] = "hyprlang" },
+})
+
 -- restore cursor position
 vim.api.nvim_create_autocmd('BufReadPost', {
   callback = function()

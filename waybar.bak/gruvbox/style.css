@@ -1,0 +1,191 @@
+ 
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'FiraCode Nerd Font';
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: @foreground;
+}
+
+
+tooltip {
+  background: transparent;
+  border: 1px solid rgba(100, 114, 125, 0.5);
+  border-radius: 2;
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces{
+    /* background-color: rgba(114, 101, 138, 0.5); */
+    /* background-color: #282828; */
+    background-color: rgba(40, 40, 40, 0.8);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+#workspaces button {
+    padding: 5px 5px;
+    background: transparent;
+    color: #b8bb26;
+    border-bottom: 3px solid transparent;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 10px;
+}
+
+#workspaces button.focused {
+    /* background: #64727D; */
+    /* border-bottom: 3px solid white; */
+}
+
+#workspaces button:hover{
+    border-radius: 10px;
+    /* background-color: rgba(114, 101, 138, 0.8); */
+    box-shadow: inset 2px 2px 2px @foreground;
+
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    /* background: #64727D; */
+    border-bottom: 3px solid white;
+}
+
+#clock, #idle_inhibitor, #network, #pulseaudio, #backlight, #tray, #temperature, #cpu, #memory, #battery{
+    /* background: transparent; */
+    /* background-color: #282828; */
+    background-color: rgba(40, 40, 40, 0.8);
+    padding: 2px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    color: @foreground;
+}
+
+#cpu, #memory {
+    color: #b8bb26;
+}
+
+#clock {
+    color: #fabd2f;
+}
+
+#network {
+  color: #d3869b;
+}
+
+#backlight {
+  color: #8ec07c;
+}
+
+#pulseaudio {
+  color: #fe8019;
+}
+
+#battery {
+  color: #b8bb26;
+}
+
+#custom-div{
+    /* background: transparent; */
+    /* background-color: #282828; */
+    background-color: rgba(40, 40, 40, 0.8);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#idle_inhibitor{
+    background: transparent;
+}
+
+#custom-menu{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 12px;
+    /* background-color: rgba(114, 101, 138, 0.5); */
+    /* background-color: transparent; */
+    /* background-color: #282828; */
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 8px;
+    margin-right: 4px;
+    color: #83a598;
+
+}
+
+#tray {
+    padding-left: 7px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 4px
+}
+
+#clock{
+    border-radius:0px 10px 10px 0px;
+    padding-right: 10px;
+}
+
+#cpu, #network {
+    border-radius:10px 0px 0px 10px;
+}
+
+#battery {
+    border-radius:0px 10px 10px 0px;
+}
+
+#pulseaudio.muted{
+    color: rgb(189, 5, 5);
+    font-weight: bold;
+
+}
+
+#custom-power{
+    margin-right: 8px;
+    margin-left: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    padding-right: 2px;
+    /* background-color: #282828; */
+    background-color: rgba(40, 40, 40, 0.8);
+    /* background: transparent; */
+    color: #fb4934;
+}
+
+#custom-name{
+border: solid 2px;
+border-color: rgba(156, 120, 223, 1);
+border-radius: 2pc 0px 2pc 0px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+#wlr-taskbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(114, 101, 138, 0.5);
+
+
+}
+    
+
+
+

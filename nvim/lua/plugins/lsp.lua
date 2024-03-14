@@ -7,7 +7,7 @@ end
 return {
   {
     'neovim/nvim-lspconfig',
-    lazy = false,
+    lazy = true,
     ft = vim.g.fts,
     dependencies = {
       'folke/neodev.nvim',
@@ -16,7 +16,8 @@ return {
 
     config = function()
       local servers = {
-        marksman = {},
+        -- marksman = {},
+        html = {},
         pyright = {
           settings = {
             python = {
@@ -160,6 +161,11 @@ return {
         'saadparwaiz1/cmp_luasnip',
         dependencies = {
           'L3MON4D3/LuaSnip',
+          build = "make install_jsregexp",
+          dependencies = { "rafamadriz/friendly-snippets" },
+          config = function ()
+            require("luasnip.loaders.from_vscode").lazy_load()
+          end
         },
       },
       'hrsh7th/cmp-nvim-lua',

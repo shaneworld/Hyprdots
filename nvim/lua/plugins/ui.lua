@@ -1,11 +1,24 @@
 return {
+  -- {
+  --   'morhetz/gruvbox',
+  --   lazy = true,
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme("gruvbox")
+  --     vim.cmd([[autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE]])
+  --   end,
+  -- },
+  --
   {
-    'morhetz/gruvbox',
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("gruvbox")
-      vim.cmd([[autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE]])
+      require("catppuccin").setup({
+        flavour = "mocha", -- latte, frappe, macchiato, mocha
+        transparent_background = true, -- Enable this to disable setting the background color
+      })
+      vim.cmd.colorscheme("catppuccin")
     end,
   },
 
@@ -93,15 +106,14 @@ return {
 
   {
     'nvim-treesitter/nvim-treesitter',
-    lazy = true,
+    lazy = false,
     build = ':TSUpdate',
     config = function()
       require('nvim-treesitter.configs').setup({
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "rust", "org", "latex" },
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "rust", "org", "latex", "hyprlang" },
         highlight = {
           enable = true,
           disable = {},
-          additional_vim_regex_highlighting = {'org'},
         },
         indent = {
           enable = true
