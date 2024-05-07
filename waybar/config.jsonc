@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "tray"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery",
+        "clock"
+    ],
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+         "format": "{icon}",
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        },
+        "format-icons": {
+          "active": "󰮯",
+          "empty": "",
+          "default": ""
+        }
+    },
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%", // Icon: microchip
+        "states": {
+          "warning": 70,
+          "critical": 90
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": " {}%", // Icon: memory
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+    "backlight": {
+      "max-length": "4",
+      "format": "{icon} {percent}%",
+      "format-icons": ["󱩎","󱩏","󱩐","󱩑","󱩒","󱩓","󱩔","󱩕","󱩖","󰛨"],
+      "on-scroll-up": "brightnessctl set 10%-",
+      "on-scroll-down": "brightnessctl set +10%"
+    },
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        // Connected to AC
+        "format": " {capacity}%", // Icon: bolt
+        // Not connected to AC
+        "format-discharging": "{icon} {capacity}%",
+        "format-icons": [
+            " ", // Icon: battery-full
+            " ", // Icon: battery-three-quarters
+            " ", // Icon: battery-half
+            " ", // Icon: battery-quarter
+            " "  // Icon: battery-empty
+        ],
+        "tooltip": false
+    },
+    "custom/launcher": {
+        "interval": "once",
+        "format": "",
+        "on-click": "systemctl suspend",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "clock": {
+      "format": " {:%H:%M}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    }
+}
