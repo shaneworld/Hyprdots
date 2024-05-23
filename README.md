@@ -7,6 +7,7 @@
 | bluetooth related | bluez<br>bluez-utils<br>blueman |
 | volume control | pavucontrol |
 | sddm theme | qt5-quickcontrols<br>qt5-graphicaleffects<br>[sddm-chili](https://github.com/MarianArlt/sddm-chili)|
+| gtk icon theme | papirus icon theme |
 | system info | [nitch](https://github.com/ssleert/nitch) |
 | fonts | ttf-jetbrains-mono-nerd<br>ttf-font-awesome<br>noto-fonts-cjk<br>noto-fonts-emoji |
 | wallpaper engine | hyprpaper |
